@@ -2,16 +2,29 @@ package per.pao.example.singleton;
 
 import per.pao.example.util.CostUtil;
 
-import java.util.Objects;
-
 public class Application {
 
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
-        checkIsSingleton();
+//        checkIsSingleton();
 //        checkSynchronizedWaste();
+        checkMultiThread();
         long end = System.currentTimeMillis();
         CostUtil.printCost(start, end);
+    }
+
+    private static void checkMultiThread() {
+        Thread a = new Thread(() -> {
+             SimpleSingleton a1 = SimpleSingleton.getInstance();
+             System.out.println(a1);
+        });
+        Thread b = new Thread(() -> {
+            SimpleSingleton b1 = SimpleSingleton.getInstance();
+            System.out.println(b1);
+        });
+
+        a.start();
+        b.start();
     }
 
     private static void checkSynchronizedWaste() {
