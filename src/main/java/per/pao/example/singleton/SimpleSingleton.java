@@ -30,7 +30,7 @@ public class SimpleSingleton {
 //        }
 //        return uniqueInstance;
 //    }
-//
+
     public static SimpleSingleton getInstance() {
         if (uniqueInstance == null) {
             uniqueInstance = new SimpleSingleton();
