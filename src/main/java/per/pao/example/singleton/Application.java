@@ -1,5 +1,6 @@
 package per.pao.example.singleton;
 
+import per.pao.example.singleton.simple.SimpleSingleton;
 import per.pao.example.util.CostUtil;
 
 public class Application {

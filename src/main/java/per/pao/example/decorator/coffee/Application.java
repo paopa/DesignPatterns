@@ -1,7 +1,7 @@
-package per.pao.example.decorator;
+package per.pao.example.decorator.coffee;
 
-import per.pao.example.decorator.base.Beverage;
-import per.pao.example.decorator.coffee.*;
+import per.pao.example.decorator.coffee.base.Beverage;
+import per.pao.example.decorator.coffee.simple.*;
 
 public class Application {
 

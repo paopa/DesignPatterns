@@ -1,7 +1,7 @@
-package per.pao.example.decorator.coffee;
+package per.pao.example.decorator.coffee.simple;
 
-import per.pao.example.decorator.base.Beverage;
-import per.pao.example.decorator.base.CondimentDecorator;
+import per.pao.example.decorator.coffee.base.Beverage;
+import per.pao.example.decorator.coffee.base.CondimentDecorator;
 
 public class Mocha extends CondimentDecorator {
 

@@ -1,4 +1,4 @@
-package per.pao.example.singleton;
+package per.pao.example.singleton.simple;
 
 public class SimpleSingleton {
 
