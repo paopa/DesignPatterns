@@ -1,6 +1,6 @@
 package per.pao.example.factory.pizza.channel;
 
-import per.pao.example.factory.pizza.simple.Pizza;
+import per.pao.example.factory.pizza.simple.base.Pizza;
 
 public abstract class PizzaStore {
 

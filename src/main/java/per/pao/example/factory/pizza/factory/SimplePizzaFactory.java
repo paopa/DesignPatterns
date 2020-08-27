@@ -1,6 +1,6 @@
 package per.pao.example.factory.pizza.factory;
 
-import per.pao.example.factory.pizza.simple.*;
+import per.pao.example.factory.pizza.simple.base.*;
 
 public class SimplePizzaFactory {
 

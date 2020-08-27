@@ -1,6 +1,10 @@
 package per.pao.example.factory.pizza.channel;
 
-import per.pao.example.factory.pizza.simple.*;
+import per.pao.example.factory.pizza.simple.base.Pizza;
+import per.pao.example.factory.pizza.simple.ny.NYStyleCheesePizza;
+import per.pao.example.factory.pizza.simple.ny.NYStyleClamPizza;
+import per.pao.example.factory.pizza.simple.ny.NYStylePepperoniPizza;
+import per.pao.example.factory.pizza.simple.ny.NYStyleVeggiePizza;
 
 public class NYStylePizzaStore extends PizzaStore {
 

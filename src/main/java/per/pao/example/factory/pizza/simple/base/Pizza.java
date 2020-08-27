@@ -1,4 +1,4 @@
-package per.pao.example.factory.pizza.simple;
+package per.pao.example.factory.pizza.simple.base;
 
 public abstract class Pizza {
 
