@@ -2,13 +2,16 @@ package per.pao.example.util.cost.object;
 
 public class CostObject {
 
-    private long startDate;
+    private final long time = System.currentTimeMillis();;
+    private final Runtime runtime = Runtime.getRuntime();;
 
-    public CostObject() {
-        startDate = System.currentTimeMillis();
+    public long costTime() {
+        return System.currentTimeMillis() - time;
     }
 
-    public long getStartDate() {
-        return startDate;
+    public long usageMemory() {
+        runtime.gc();
+        return runtime.totalMemory() - runtime.freeMemory();
     }
+
 }
