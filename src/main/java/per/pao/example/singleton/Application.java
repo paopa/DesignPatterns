@@ -1,23 +1,23 @@
 package per.pao.example.singleton;
 
 import per.pao.example.singleton.simple.SimpleSingleton;
-import per.pao.example.util.CostUtil;
+import per.pao.example.util.cost.CostUtil;
+import per.pao.example.util.cost.object.CostObject;
 
 public class Application {
 
-    public static void main(String[] args) {
-        long start = System.currentTimeMillis();
+    public static void main(String[] args) throws InterruptedException {
+        CostObject cost = CostUtil.getInstance();
 //        checkIsSingleton();
 //        checkSynchronizedWaste();
         checkMultiThread();
-        long end = System.currentTimeMillis();
-        CostUtil.printCost(start, end);
+        CostUtil.printCost(cost);
     }
 
-    private static void checkMultiThread() {
+    private static void checkMultiThread() throws InterruptedException {
         Thread a = new Thread(() -> {
-             SimpleSingleton a1 = SimpleSingleton.getInstance();
-             System.out.println(a1);
+            SimpleSingleton a1 = SimpleSingleton.getInstance();
+            System.out.println(a1);
         });
         Thread b = new Thread(() -> {
             SimpleSingleton b1 = SimpleSingleton.getInstance();
