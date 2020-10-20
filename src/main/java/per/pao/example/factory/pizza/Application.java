@@ -3,6 +3,7 @@ package per.pao.example.factory.pizza;
 import per.pao.example.factory.pizza.factory.store.ChicagoStylePizzaStore;
 import per.pao.example.factory.pizza.factory.store.NYStylePizzaStore;
 import per.pao.example.factory.pizza.factory.store.PizzaStore;
+import per.pao.example.factory.pizza.product.pizza.base.Pizza;
 
 import static sun.util.locale.LocaleUtils.isEmpty;
 
@@ -10,7 +11,7 @@ import static sun.util.locale.LocaleUtils.isEmpty;
 public class Application {
 
     public static void main(String[] args) {
-        orderPizza("Chicago","pepperoni");
+        orderPizza("NY","pepperoni");
     }
 
     private static void orderPizza(String factory, String kind) {
@@ -28,7 +29,8 @@ public class Application {
             default:
                 throw new IllegalStateException("Unexpected value: " + factory);
         }
-        pizzaStore.orderPizza(kind);
+        Pizza pizza = pizzaStore.orderPizza(kind);
+        System.out.println(pizza);
     }
 
 }

@@ -14,6 +14,8 @@
 ## 抽象工廠 
 ```
     e.g. pizza ingredient factory
+    優點： 可完整確實的建立同一系列物件
+    缺點： 改變 interface 牽涉範圍大
 ```
 
 ## 工廠方法

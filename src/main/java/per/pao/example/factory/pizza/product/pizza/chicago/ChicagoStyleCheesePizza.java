@@ -1,11 +1,11 @@
 package per.pao.example.factory.pizza.product.pizza.chicago;
 
-import per.pao.example.factory.pizza.product.pizza.base.Pizza;
+import per.pao.example.factory.pizza.factory.ingredient.PizzaIngredientFactory;
+import per.pao.example.factory.pizza.product.pizza.base.CheesePizza;
 
-public class ChicagoStyleCheesePizza extends Pizza {
+public class ChicagoStyleCheesePizza extends CheesePizza {
 
-    public ChicagoStyleCheesePizza(){
-        System.out.println("create Chicago Style Cheese Pizza");
+    public ChicagoStyleCheesePizza(PizzaIngredientFactory ingredientFactory) {
+        super(ingredientFactory);
     }
-
 }
