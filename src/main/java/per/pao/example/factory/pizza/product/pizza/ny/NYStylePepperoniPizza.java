@@ -1,6 +1,6 @@
-package per.pao.example.factory.pizza.simple.ny;
+package per.pao.example.factory.pizza.product.pizza.ny;
 
-import per.pao.example.factory.pizza.simple.base.Pizza;
+import per.pao.example.factory.pizza.product.pizza.base.Pizza;
 
 public class NYStylePepperoniPizza extends Pizza {
 
