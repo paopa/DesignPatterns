@@ -10,13 +10,13 @@ public class Application {
 
     private static void weatherStationDemo() throws InterruptedException {
         WeatherData weatherData = new WeatherData();
-        CurrentConditionsDisplay A = new CurrentConditionsDisplay(weatherData, "A");
         int i = 0;
+        CurrentConditionsDisplay A = new CurrentConditionsDisplay(weatherData, "A");
         while (i < 10) {
-            if(i == 3){
-                CurrentConditionsDisplay B = new CurrentConditionsDisplay(weatherData, "B");
+            if (i == 3) {
+                new CurrentConditionsDisplay(weatherData, "B");
             }
-            if(i == 6){
+            if (i == 6) {
                 weatherData.removeObserver(A);
             }
             weatherData.setMeasurements(generateRandom(32), generateRandom(0), generateRandom(0));
