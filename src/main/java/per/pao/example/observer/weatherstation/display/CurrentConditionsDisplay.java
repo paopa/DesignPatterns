@@ -5,18 +5,20 @@ import per.pao.example.observer.weatherstation.subject.Subject;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
+    private String name;
     private float temperature;
     private float humidity;
     private Subject weatherData;
 
-    public CurrentConditionsDisplay(Subject subject) {
+    public CurrentConditionsDisplay(Subject subject, String name) {
         this.weatherData = subject;
+        this.name = name;
         weatherData.registerObserver(this);
     }
 
     @Override
     public void display() {
-        System.out.printf("Current conditions: %.2f F degrees and %.2f %% humidity\n", temperature, humidity);
+        System.out.printf("%s Current conditions: %.2f F degrees and %.2f %% humidity\n", name, temperature, humidity);
     }
 
     @Override
