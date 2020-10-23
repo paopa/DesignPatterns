@@ -2,20 +2,21 @@ package per.pao.example.command.device.command;
 
 import per.pao.example.command.device.item.Light;
 
-public class LightOnCommand implements Command {
-    private Light light;
+public class LightOffCommand implements Command {
 
-    public LightOnCommand(Light light) {
+    Light light;
+
+    public LightOffCommand(Light light) {
         this.light = light;
     }
 
     @Override
     public void execute() {
-        light.on();
+        light.off();
     }
 
     @Override
     public void undo() {
-        light.off();
+        light.on();
     }
 }

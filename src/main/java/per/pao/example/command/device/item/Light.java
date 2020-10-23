@@ -9,9 +9,10 @@ public class Light {
     }
 
     public void on() {
-        System.out.printf("item: %s light is on\n",name);
+        System.out.printf("item: %s light is on\n", name);
     }
 
     public void off() {
+        System.out.printf("item: %s light is off\n", name);
     }
 }
