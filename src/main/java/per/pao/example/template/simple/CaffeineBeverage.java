@@ -13,11 +13,11 @@ public abstract class CaffeineBeverage {
     }
 
     void addOtherCondiments() {
-        // hook can implement not thing
+        // this is a hook method
     }
 
     boolean canAddOtherCondiments() {
-        // hook can implement not thing
+        // this is a hook method
         return true;
     }
 
