@@ -2,7 +2,7 @@ package per.pao.example.iterator.simple;
 
 import java.util.ArrayList;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu{
 
     private final ArrayList menuItems;
 
@@ -19,7 +19,8 @@ public class PancakeHouseMenu {
         menuItems.add(item);
     }
 
-    public Iterator createIterator() {
+    @Override
+    public Iterator<MenuItem> createIterator() {
         return new PancakeIterator(menuItems);
     }
 

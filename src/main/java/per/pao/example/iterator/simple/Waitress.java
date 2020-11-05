@@ -3,10 +3,10 @@ package per.pao.example.iterator.simple;
 public class Waitress {
 
     private String name;
-    private DinnerMenu dinnerMenu;
-    private PancakeHouseMenu pancakeHouseMenu;
+    private Menu dinnerMenu;
+    private Menu pancakeHouseMenu;
 
-    public Waitress(String name, PancakeHouseMenu pancakeHouseMenu, DinnerMenu dinnerMenu) {
+    public Waitress(String name, Menu pancakeHouseMenu, Menu dinnerMenu) {
         this.name = name;
         this.pancakeHouseMenu = pancakeHouseMenu;
         this.dinnerMenu = dinnerMenu;
@@ -29,6 +29,9 @@ public class Waitress {
         }
     }
 
+    /**
+     * print menu version 1
+     */
 //    public void printMenu() {
 //        ArrayList breakfastMenu = pancakeHouseMenu.getMenuItems();
 //        MenuItem[] lunchItems = dinnerMenu.getMenuItems();

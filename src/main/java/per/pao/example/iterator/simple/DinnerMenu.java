@@ -1,6 +1,6 @@
 package per.pao.example.iterator.simple;
 
-public class DinnerMenu {
+public class DinnerMenu implements Menu{
 
     private final static int MAX_ITEMS = 6;
     private int numberOfItems = 0;
@@ -24,7 +24,8 @@ public class DinnerMenu {
         numberOfItems += 1;
     }
 
-    public Iterator createIterator() {
+    @Override
+    public Iterator<MenuItem> createIterator() {
         return new DinnerMenuIterator(menuItems);
     }
 
@@ -32,4 +33,5 @@ public class DinnerMenu {
     public MenuItem[] getMenuItems() {
         return menuItems;
     }
+
 }
