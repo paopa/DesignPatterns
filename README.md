@@ -14,7 +14,7 @@ JDK 14.0.2
  - decorator
  - factory
  - facade
- - iterator (doing)
+ - iterator 
  - singleton
  - template
  - observer
