@@ -1,5 +1,7 @@
 package per.pao.example.composite.simple;
 
+import java.util.Iterator;
+
 public class DinnerMenu implements Menu {
 
     private final static int MAX_ITEMS = 6;
@@ -25,7 +27,7 @@ public class DinnerMenu implements Menu {
     }
 
     @Override
-    public Iterator<MenuItem> createIterator() {
+    public Iterator createIterator() {
         return new DinnerMenuIterator(menuItems);
     }
 

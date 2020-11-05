@@ -1,6 +1,7 @@
 package per.pao.example.composite.simple;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class PancakeHouseMenu implements Menu {
 
@@ -20,8 +21,8 @@ public class PancakeHouseMenu implements Menu {
     }
 
     @Override
-    public Iterator<MenuItem> createIterator() {
-        return new PancakeIterator(menuItems);
+    public Iterator createIterator() {
+        return menuItems.iterator();
     }
 
     // remove this method

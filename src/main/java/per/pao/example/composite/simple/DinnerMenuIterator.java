@@ -1,5 +1,7 @@
 package per.pao.example.composite.simple;
 
+import java.util.Iterator;
+
 public class DinnerMenuIterator implements Iterator<MenuItem> {
 
     MenuItem[] items;

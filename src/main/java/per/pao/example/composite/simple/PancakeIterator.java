@@ -1,6 +1,7 @@
 package per.pao.example.composite.simple;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class PancakeIterator implements Iterator<MenuItem> {
 
