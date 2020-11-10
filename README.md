@@ -10,12 +10,13 @@ JDK 14.0.2
 
  - adapter
  - command
- - composite (doing)
+ - composite
  - decorator
  - factory
  - facade
  - iterator 
  - singleton
+ - state ( doing )
  - template
  - observer
  
