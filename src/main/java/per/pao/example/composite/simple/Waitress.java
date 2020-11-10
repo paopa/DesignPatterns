@@ -7,10 +7,23 @@ import java.util.List;
 public class Waitress {
 
     private String name;
+
     private Menu dinnerMenu;
     private Menu pancakeHouseMenu;
     private Menu cafeMenu;
     private List menus = new ArrayList();
+
+    MenuComponent allMenus;
+
+    public Waitress(String name, MenuComponent allMenus) {
+        this.name = name;
+        this.allMenus = allMenus;
+    }
+
+    public Waitress(String name, List menus) {
+        this.name = name;
+        this.menus = menus;
+    }
 
     public Waitress(String name, Menu pancakeHouseMenu, Menu dinnerMenu, Menu cafeMenu) {
         this.name = name;
@@ -19,26 +32,44 @@ public class Waitress {
         this.cafeMenu = cafeMenu;
     }
 
-    public Waitress(String name, List menus) {
-        this.name = name;
-        this.menus = menus;
-    }
-
-    public void printMenu() {
-        Iterator menuIterator = menus.iterator();
-        while (menuIterator.hasNext()) {
-            Menu menu = (Menu) menuIterator.next();
-            System.out.println();
-            printMenu(menu.createIterator());
-        }
-    }
-
     private void printMenu(Iterator pancakeIterator) {
         while (pancakeIterator.hasNext()) {
             MenuItem item = (MenuItem) pancakeIterator.next();
             System.out.printf("%s %f %s\n", item.getName(), item.getPrice(), item.getDescription());
         }
     }
+
+    public void printMenu() {
+        allMenus.print();
+    }
+
+    public void printVegetarianMenu() {
+        Iterator<MenuComponent> iterator = allMenus.createIterator();
+        System.out.println("\n-----VEGETARIAN MENU-----");
+        while (iterator.hasNext()) {
+            MenuComponent component = iterator.next();
+            try {
+                if (component.isVegetarian()) {
+                    component.print();
+                }
+            } catch (UnsupportedOperationException e) {
+                // ignore
+            }
+        }
+    }
+
+    /**
+     * print menu version 3
+     */
+//    public void printMenu() {
+//        Iterator menuIterator = menus.iterator();
+//        while (menuIterator.hasNext()) {
+//            Menu menu = (Menu) menuIterator.next();
+//            System.out.println();
+//            printMenu(menu.createIterator());
+//        }
+//    }
+
 
     /**
      * print menu version 2
