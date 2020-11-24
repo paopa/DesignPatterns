@@ -1,4 +1,4 @@
-package per.pao.example.state.simple;
+package per.pao.example.state.simple.bad.pracitce;
 
 public class GumballMachine {
 
@@ -30,7 +30,7 @@ public class GumballMachine {
                 break;
             case NO_QUARTER:
                 state = HAS_QUARTER;
-                System.out.println("you insert a quarter");
+                System.out.println("you inserted a quarter");
                 break;
         }
     }
@@ -92,5 +92,9 @@ public class GumballMachine {
                 System.out.println("you ned to pay first");
                 break;
         }
+    }
+
+    public String toString() {
+        return String.format("GumballMachine state:%s ,count:%s", state, count);
     }
 }
