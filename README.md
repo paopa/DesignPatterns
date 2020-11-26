@@ -15,6 +15,7 @@ JDK 14.0.2
  - factory
  - facade
  - iterator 
+ - proxy (doing)
  - singleton
  - state
  - template
