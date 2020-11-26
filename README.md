@@ -16,7 +16,7 @@ JDK 14.0.2
  - facade
  - iterator 
  - singleton
- - state ( doing )
+ - state
  - template
  - observer
  
