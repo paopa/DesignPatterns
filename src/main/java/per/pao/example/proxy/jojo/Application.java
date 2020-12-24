@@ -6,7 +6,7 @@ public class Application {
     }
 
     private static void demo() {
-        StarPlatinum starPlatinum = new StarPlatinum();
+        Character starPlatinum = new StarPlatinum();
         starPlatinum.attack();
     }
 }
