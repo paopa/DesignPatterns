@@ -11,15 +11,15 @@ import static sun.util.locale.LocaleUtils.isEmpty;
 public class Application {
 
     public static void main(String[] args) {
-        orderPizza("NY","pepperoni");
+        orderPizza("NY", "pepperoni");
     }
 
     private static void orderPizza(String factory, String kind) {
-        if(isEmpty(factory) || isEmpty(kind)){
+        if (isEmpty(factory) || isEmpty(kind)) {
             return;
         }
         PizzaStore pizzaStore;
-        switch (factory){
+        switch (factory) {
             case "Chicago":
                 pizzaStore = new ChicagoStylePizzaStore();
                 break;
