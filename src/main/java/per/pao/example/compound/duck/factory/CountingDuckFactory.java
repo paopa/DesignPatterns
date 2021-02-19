@@ -1,7 +1,7 @@
-package per.pao.example.compound.dock.factory;
+package per.pao.example.compound.duck.factory;
 
-import per.pao.example.compound.dock.*;
-import per.pao.example.compound.dock.decorator.QuackCounter;
+import per.pao.example.compound.duck.*;
+import per.pao.example.compound.duck.decorator.QuackCounter;
 
 public class CountingDuckFactory extends AbstractDuckFactory {
     @Override

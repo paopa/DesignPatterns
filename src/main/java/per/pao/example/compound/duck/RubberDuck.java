@@ -1,4 +1,4 @@
-package per.pao.example.compound.dock;
+package per.pao.example.compound.duck;
 
 public class RubberDuck implements Quackable {
     @Override

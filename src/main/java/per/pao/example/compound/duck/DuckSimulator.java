@@ -1,11 +1,12 @@
-package per.pao.example.compound.dock;
+package per.pao.example.compound.duck;
 
-import per.pao.example.compound.dock.adapter.Goose;
-import per.pao.example.compound.dock.adapter.GooseAdapter;
-import per.pao.example.compound.dock.composite.Flock;
-import per.pao.example.compound.dock.decorator.QuackCounter;
-import per.pao.example.compound.dock.factory.AbstractDuckFactory;
-import per.pao.example.compound.dock.factory.CountingDuckFactory;
+import per.pao.example.compound.duck.adapter.Goose;
+import per.pao.example.compound.duck.adapter.GooseAdapter;
+import per.pao.example.compound.duck.composite.Flock;
+import per.pao.example.compound.duck.decorator.QuackCounter;
+import per.pao.example.compound.duck.factory.AbstractDuckFactory;
+import per.pao.example.compound.duck.factory.CountingDuckFactory;
+import per.pao.example.compound.duck.observer.Observer;
 
 public class DuckSimulator {
     public static void main(String[] args) {
@@ -38,6 +39,10 @@ public class DuckSimulator {
         flockB.add(mallardTwo);
         flockB.add(mallardThree);
         flockB.add(mallardFour);
+
+        System.out.println("\nDuck Simulator: With Observer");
+        Observer.Quackologist quackologist = new Observer.Quackologist();
+        flockA.registerObserver(quackologist);
 
         System.out.println("\nDuck Simulator: Whole Flock Simulation");
         simulate(flockA);

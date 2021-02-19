@@ -1,4 +1,4 @@
-package per.pao.example.compound.dock.adapter;
+package per.pao.example.compound.duck.adapter;
 
 public class Goose {
     public void honk() {

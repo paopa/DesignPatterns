@@ -1,6 +1,6 @@
-package per.pao.example.compound.dock.decorator;
+package per.pao.example.compound.duck.decorator;
 
-import per.pao.example.compound.dock.Quackable;
+import per.pao.example.compound.duck.Quackable;
 
 public class QuackCounter implements Quackable {
 

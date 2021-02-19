@@ -1,6 +1,6 @@
-package per.pao.example.compound.dock.factory;
+package per.pao.example.compound.duck.factory;
 
-import per.pao.example.compound.dock.*;
+import per.pao.example.compound.duck.*;
 
 public class DuckFactory extends AbstractDuckFactory {
     @Override

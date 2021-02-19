@@ -1,6 +1,6 @@
-package per.pao.example.compound.dock.adapter;
+package per.pao.example.compound.duck.adapter;
 
-import per.pao.example.compound.dock.Quackable;
+import per.pao.example.compound.duck.Quackable;
 
 public class GooseAdapter implements Quackable {
 

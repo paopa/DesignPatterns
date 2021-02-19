@@ -1,6 +1,6 @@
-package per.pao.example.compound.dock.factory;
+package per.pao.example.compound.duck.factory;
 
-import per.pao.example.compound.dock.Quackable;
+import per.pao.example.compound.duck.Quackable;
 
 public abstract class AbstractDuckFactory {
 
