@@ -2,7 +2,7 @@
 
 ## Note
 >
-> duck example 只是利用多種 pattern 結合
-> 並不是真正的 compound pattern
-> 
-> 實踐 View-Model-Controller 來使用 compound pattern
+> 複合模式 有一些威力強大的OO設計同時使用多個設計模式，模式通常被一起使用， \
+> 並被組合在同一個設計解決方案中 複合模式在一個解決方案中結合兩個或多個模式，以解決一般或重複的問題， \
+> 最常見的複合模式就是MVC(模型檢視控制器 Model-View-Controller)
+>
