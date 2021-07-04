@@ -12,7 +12,7 @@ public class Demo
 
     public static void main(String[] args)
     {
-        new Demo().run();
+        new Demo().start();
     }
 
     @Override

@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 import static java.util.Objects.isNull;
 
@@ -42,9 +41,9 @@ public class Tree
         public void draw(Graphics graphics, int x, int y)
         {
             graphics.setColor(Color.BLACK);
-            graphics.setClip(x - 1, y, 3, 5);
+            graphics.fillRect(x - 1, y, 3, 5);
             graphics.setColor(this.color);
-            graphics.setClip(x - 5, y - 10, 10, 10);
+            graphics.fillOval(x - 5, y - 10, 10, 10);
         }
 
         public static final class Factory
