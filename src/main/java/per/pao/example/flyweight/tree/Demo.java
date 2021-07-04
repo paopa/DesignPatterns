@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.util.stream.LongStream;
 
 public class Demo
-    extends Thread
+        extends Thread
 {
     public static final int CANVAS_SIZE = 500;
     public static final int TREES_TO_DRAW = 1_000_000;
@@ -38,7 +38,8 @@ public class Demo
                 "MB (instead of " + ((TREES_TO_DRAW * 38) / 1024 / 1024) + "MB)");
     }
 
-    private static int random(int min, int max) {
+    private static int random(int min, int max)
+    {
         return min + (int) (Math.random() * ((max - min) + 1));
     }
 }
