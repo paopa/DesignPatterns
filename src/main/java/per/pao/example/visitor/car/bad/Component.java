@@ -1,4 +1,4 @@
-package per.pao.example.visitor.car;
+package per.pao.example.visitor.car.bad;
 
 import java.util.ArrayList;
 import java.util.List;
